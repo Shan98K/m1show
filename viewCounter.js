@@ -1,4 +1,5 @@
-let count = localStorage.getItem("m1_views") || 0;
-count++;
-localStorage.setItem("m1_views", count);
-document.getElementById("counter").textContent = `Views : ${count}`;
+fetch("https://api.countapi.xyz/hit/m1show/webcounter")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("counter").textContent = "Views : " + data.value;
+  });
