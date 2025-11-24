@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./imgs/m1Logo_paint_filled.png"
+      type="image/x-icon"
+    />
+    <!-- Both for PreLoading of the Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>M1Show</title>
+  </head>
+  <body>
+    <div class="m1-background">
+      <div class="m1-bars">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <header>
+      <h1>M1Show</h1>
+      <div id="counter"></div>
+    </header>
+
+    <section class="heroPage">
+      <div class="hero">
+        <h2>A Cleaner Way to Explore Movies</h2>
+        <p>
+          Browse movies, check ratings, read details, and instantly watch
+          trailers — all inside one smooth, distraction-free app.
+        </p>
+      </div>
+    </section>
+
+    <section class="featuresPage">
+      <div class="features">
+        <h2>Why You’ll Love It</h2>
+        <div class="feature-row">
+          <div class="feature">
+            <h3>Effortless Browsing</h3>
+            <p>
+              Dive into summaries, cast, ratings, and artwork — all neatly
+              designed and visually clean.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Detailed Movie Pages</h3>
+            <p>
+              Access key movie details—overview, cast, ratings, and visuals—all
+              in one neat place.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Trailer Experience</h3>
+            <p>
+              Watch high-quality trailers instantly inside the app without
+              interruptions or clutter.
+            </p>
+          </div>
+        </div>
+        <div class="selfFoot">
+          <div class="share">
+            <a href="https://github.com/Shan98K" target="_blank">
+              <img src="./imgs/Github_fake_colored.png" alt="GitHub" />
+            </a>
+            <a href="https://instagram.com/Shan98K" target="_blank">
+              <img src="./imgs/instagram_colored.png" alt="Instagram" />
+            </a>
+            <a href="https://www.linkedin.com/in/Shan98K" target="_blank">
+              <img src="./imgs/linkedin_colored.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="featuresIMG">
+        <div class="f-imgCollab">
+          <img src="./imgs/AppSS1.jpg" alt="" />
+          <img src="./imgs/AppSS3.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="featuresPage">
+      <div class="featuresIMGexp">
+        <div class="f-imgCollabexp">
+          <img src="./imgs/AppSS1.jpg" alt="" />
+          <img src="./imgs/AppSS2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="expPage1">
+        <h2 class="expPage1Title">Smart Search & Powerful Filters</h2>
+        <p class="expPage1sub-text">
+          Instantly find movies using advanced search, category filters, and
+          quick sort tools. Jump into Popular, Top Rated, Trending, or Upcoming
+          with a single tap.
+        </p>
+        <div class="expPage1buttons">
+          <div class="expPage1btn">
+            <h3>Fast Category Switching</h3>
+            <p>
+              Move between sections like Trending, Popular, and Top Rated
+              effortlessly.
+            </p>
+          </div>
+          <div class="expPage1btn">
+            <h3>Precision Search</h3>
+            <p>
+              Find any movie in seconds with real-time suggestions and accurate
+              filtering.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="downloadAppPage" id="download">
+      <div class="download-container">
+        <h2>Explore the Full M1Show Experience</h2>
+        <p class="download-sub">
+          Fast navigation, clean UI, powerful search — the full app gives you
+          everything in one place.
+        </p>
+
+        <button id="downloadBtn" class="download-btn">Download M1Show</button>
+
+        <p class="file-note">Your download will start instantly.</p>
+      </div>
+    </section>
+    <div class="popupOverlay" id="popupOverlay">
+      <div class="popup">
+        <h3>Download Started!</h3>
+        <p>Your app is downloading…</p>
+        <button id="closePopup">OK</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 M1Show — Created by Shan98K</p>
+      <div class="share">
+        <a href="https://github.com/Shan98K" target="_blank">
+          <img src="./imgs/Github_fake_colored.png" alt="GitHub" />
+        </a>
+
+        <a href="https://instagram.com/Shan98K" target="_blank">
+          <img src="./imgs/instagram_colored.png" alt="Instagram" />
+        </a>
+
+        <a href="https://www.linkedin.com/in/Shan98K" target="_blank">
+          <img src="./imgs/linkedin_colored.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="download.js"></script>
+    <script src="viewCounter.js"></script>
+  </body>
+</html>
