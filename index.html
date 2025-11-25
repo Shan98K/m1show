@@ -31,7 +31,7 @@
 
     <header>
       <h1>M1Show</h1>
-      <div id="counter"></div>
+      <div id="counter">Views: Loading...</div>
     </header>
 
     <section class="heroPage">
@@ -132,17 +132,17 @@
           Fast navigation, clean UI, powerful search — the full app gives you
           everything in one place.
         </p>
-
         <button id="downloadBtn" class="download-btn">Download M1Show</button>
-
         <p class="file-note">Your download will start instantly.</p>
+        <p class="file-note2">"M1Show was launched on <span>24 November 2025</span>, marking the beginning of our online presence."</p>
       </div>
     </section>
     <div class="popupOverlay" id="popupOverlay">
       <div class="popup">
         <h3>Download Started!</h3>
-        <p>Your app is downloading…</p>
-        <button id="closePopup">OK</button>
+        <p id="countdownText">Download is starting in ...</p>
+        <h2 id="timer">3</h2>
+        <button id="closePopup" disabled>OK</button>
       </div>
     </div>
 
@@ -164,6 +164,6 @@
     </footer>
 
     <script src="download.js"></script>
-    <script src="viewCounter.js"></script>
+    <script type="module" src="viewCounter.js"></script>
   </body>
 </html>

@@ -331,6 +331,7 @@ section {
   color: white;
   transition: 0.25s;
   box-shadow: 0 0 10px #6f00ff70;
+  margin-top: 15px;
 }
 
 .download-btn:hover {
@@ -343,7 +344,13 @@ section {
   font-size: 0.95rem;
   opacity: 0.65;
 }
-
+.file-note2 {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  opacity: 0.65;
+  font-style: oblique;
+}
+.file-note2 span { font-style: normal; font-weight: bold; cursor: default; }
 .popupOverlay {
   position: fixed;
   inset: 0;
