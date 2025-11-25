@@ -6,7 +6,6 @@ import {
   set,
 } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
 
-// Your Firebase config (same as you pasted)
 const firebaseConfig = {
   apiKey: "AIzaSyCmYLaB7ykapxcOCMyKXWa8YfDLLvGo_JI",
   authDomain: "m1showwebshare.firebaseapp.com",
@@ -18,14 +17,14 @@ const firebaseConfig = {
   measurementId: "G-9XRV50SQS5",
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
 const counterRef = ref(db, "viewCounter");
 
-// Update view count
 async function updateCounter() {
+  document.getElementById("counter").innerText = "Views: Loading...";
+
   const snapshot = await get(counterRef);
   let current = snapshot.exists() ? snapshot.val() : 0;
 
